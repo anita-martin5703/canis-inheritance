@@ -1,20 +1,21 @@
 package edu.cnm.deepdive;
 
-public class CanisLupus extends Canis {
+public class CanisLatrans extends Canis {
 
   private static int instanceCount = 0;
 
-  public CanisLupus() {
+  public CanisLatrans() {
     instanceCount++;
   }
 
   @Override
   public void hunt() {
-    System.out.println("Hunt living prey in packs.");
+    System.out.println("Hunt small prey individually, larger prey in packs");
   }
 
+  @Override
   public void speak() {
-    System.out.println("Howl!");
+    System.out.println("Howl, bark, or yap.");
   }
 
   public static int getInstanceCount() {
